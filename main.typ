@@ -27,6 +27,7 @@
 // Biblografia
 #show bibliography: set heading(numbering: "1.")
 #bibliography("./bibliografia.yml", title: "Bibliografia")
+#pagebreak()
 
 // Anexos
 #include "./secciones/anexos.typ"
