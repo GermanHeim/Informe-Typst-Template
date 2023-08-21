@@ -11,7 +11,6 @@
 ) = {
   // Set the document's basic properties.
   set document(author: authors, title: title)
-  set page(numbering: "1", number-align: center)
   set text(font: "New Computer Modern", lang: "es")
   show math.equation: set text(weight: 400)
   set heading(numbering: "1.1.")
@@ -61,6 +60,7 @@ align(center)[
   // Main body.
   set par(justify: true)
   set page(header: [#set text(8pt);#title #h(1fr)#smallcaps[#date]]) // Header
+  set page(numbering: "1", number-align: center)
 
   body
 }
