@@ -42,11 +42,11 @@
   pagebreak()
 
   // Abstract page.
-align(center)[
+  align(center)[
     #heading(
       outlined: false,
       numbering: none,
-      text(0.85em, smallcaps[Abstract]),
+      text(0.85em, smallcaps[Resumen]),
     )
     #abstract
   ]
@@ -59,7 +59,7 @@ align(center)[
 
   // Main body.
   set par(justify: true)
-  set page(header: [#set text(8pt);#title #h(1fr)#smallcaps[#date]]) // Header
+  set page(header: [#set text(11pt);#title #h(1fr) #smallcaps[#date]; #line(length: 100%, stroke: 0.5pt);]) // Header
   set page(numbering: "1", number-align: center)
 
   body

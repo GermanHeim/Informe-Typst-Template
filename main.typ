@@ -12,6 +12,11 @@
   date: "Agosto 22, 2023", // Cambiar esto
 )
 
+//Paquetes
+#import "@preview/whalogen:0.1.0": * // Química
+#import "@preview/unify:0.4.0": * // Unidades y errores
+
+
 // Objetivos
 #include "./secciones/objetivos.typ"
 
