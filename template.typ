@@ -41,6 +41,15 @@
   v(2.4fr)
   pagebreak()
 
+  // Table of contents.
+  outline(depth: 3, indent: true)
+  pagebreak()
+
+  // Main body.
+  set par(justify: true)
+  set page(header: [#set text(11pt);#title #h(1fr) #smallcaps[#date]; #line(length: 100%, stroke: 0.5pt);]) // Header
+  set page(numbering: "1", number-align: center)
+
   // Abstract page.
   align(center)[
     #heading(
@@ -50,17 +59,7 @@
     )
     #abstract
   ]
-  v(6em, weak: true)
-
-  // Table of contents.
-  outline(depth: 3, indent: true)
-  pagebreak()
-
-
-  // Main body.
-  set par(justify: true)
-  set page(header: [#set text(11pt);#title #h(1fr) #smallcaps[#date]; #line(length: 100%, stroke: 0.5pt);]) // Header
-  set page(numbering: "1", number-align: center)
+  v(4em, weak: true)
 
   body
 }
