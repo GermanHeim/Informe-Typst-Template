@@ -12,9 +12,18 @@
   date: "Agosto 22, 2023", // Cambiar esto
 )
 
+#set math.equation(numbering: "(1)")
+#show figure.where(
+  kind: table
+): set figure.caption(position: top)
+
+
+#pagebreak()
+
 //Paquetes
-#import "@preview/whalogen:0.1.0": * // Química
-#import "@preview/unify:0.4.0": * // Unidades y errores
+// #import "@preview/whalogen:0.1.0": * // Química
+// #import "@preview/tablex:0.0.5": *  // Tablas
+
 
 
 // Objetivos
