@@ -14,6 +14,9 @@
   set text(font: "New Computer Modern", lang: "es")
   show math.equation: set text(weight: 400)
   set heading(numbering: "1.1.")
+  set math.equation(numbering: "(1)")
+  show figure.where(
+  kind: table): set figure.caption(position: top)
 
   // Title page.
   // The page can contain a logo if you pass one with `logo: "logo.png"`.
@@ -59,7 +62,7 @@
     )
     #abstract
   ]
-  v(4em, weak: true)
+  pagebreak()
 
   body
 }
